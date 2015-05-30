@@ -44,3 +44,21 @@ grunt test
 上書きされる
 但し、以下の書き方すれば回避できる
 var ns = exports.ns || {};
+
+###singlerunとは？
+テストを1回限りとするオプション。
+trueを設定すると、テストを１回実行後exit。
+
+###テスト結果を見やすくしたい
+karma-mocha-debugをインストールしてkarma.config.jsに組み込む。
+DEBUGボタンを押すとテスト結果画面を開くことができる。
+
+###カバレッジ計測を行う
+karma-coverageをインストールしてkarma.config.jsに組み込む
+karma.conf.jsがsrcと別の子フォルダ内にあるときcoverageのhtmlがうまく生成されない**不具合**あり
+とりあえずkarma-coverageを使うときはkarma.conf.jsはroot直下に配置する
+
+###SinonJSを使う
+
+###chaiの文法を色々試す
+

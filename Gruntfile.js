@@ -2,8 +2,15 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		karma: {
-			unit: {
+			options: {
 				configFile: 'karma.conf.js'
+			},
+			single: {
+				singleRun: true,
+				browsers: ['PhantomJS']
+			},
+			auto: {
+				singleRun: false
 			}
 		}
 	});
@@ -11,5 +18,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-karma');
 
 	grunt.registerTask('default', []);
-	grunt.registerTask('test', ['karma']);
+	grunt.registerTask('autotest', ['karma:auto']);
+	grunt.registerTask('singletest', ['karma:single']);
 };
