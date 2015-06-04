@@ -1,0 +1,19 @@
+{
+  "name": "bdd-grunt-karma-mocha-chai",
+  "version": "0.0.0",
+  "homepage": "https://github.com/TsuchiyaKoichi/bdd-grunt-karma-mocha-chai",
+  "authors": [
+    "TsuchiyaKoichi <lival1116@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sinonjs": "~1.14.1"
+  }
+}

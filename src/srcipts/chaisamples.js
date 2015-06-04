@@ -4,9 +4,8 @@
 
 	var ns = exports.ns || {};
 
-	ns.b = 20;
-
-	ns.c = 0;
+	ns.foo = 'bar';
+	ns.bevarages = { tea: ['chai', 'matcha', 'oolong']};
 
 	exports.ns = ns;
 
